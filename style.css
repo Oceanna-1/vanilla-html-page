@@ -3,6 +3,7 @@
     --dark-green:rgba(115, 135, 69, 0.678);
     --mid-green:rgba(164, 189, 107, 0.678);
     --light-green:rgba(220, 241, 170, 0.66);
+    --light-pink:rgb(255, 243, 225); 
     --beige: cornsilk;
 }
 
@@ -26,6 +27,9 @@ header h1, h2, h3{
 }
 footer{
     text-align: center;
+}
+section:nth-child(odd){
+    background-color: var(--light-pink);
 }
 
 /* links */
@@ -70,7 +74,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    margin: 10px 10% 10px 0%;
+    margin: 20px 10% 20px 0%;
 }
 nav{
     background-color: var(--beige);
@@ -91,12 +95,23 @@ aside p{
     padding: 5px;
 }
 
+/* sites section */
+figure{
+    background-color: var(--light-green);
+    padding: 35px;
+    border-radius: 15%;
+    max-width: 75%;
+}
+figure img{
+    border-radius: 25%;
+}
+figcaption{
+    width: 50%;
+    text-align: center;
+}
 
 
 /* form */
 fieldset{
     margin-bottom: 10px;
-}
-form{
-    justify-content: center;
 }
