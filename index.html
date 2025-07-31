@@ -11,7 +11,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#recommendations">Highlights</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
             <li><a href="#sites">Sites</a></li>
             <li><a href="#itinerary">Itinerary</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -52,7 +52,7 @@
         <aside>
             <details>
                 <summary>
-                    Did you know?
+                    <strong>Did you know?</strong>
                 </summary>
                 <p>
                     You're allowed to drink in the streets. That's right! Grab a beer and go - I've heard that long walks and ambery ale go well together.
@@ -125,12 +125,14 @@
                     </td>
                     <td>Sight see at the Acropolis</td>
                 </tr>
-
             </tbody>
             <tfoot>
                 <tr>
                     <td colspan="2">
-                        Tip! Select a hotel close to the Acropolis. Athens is a very walkable city. Most day excursions offer hotel pickup - but they tend to offer that for those in the inner-city.
+                        <p>
+                          <strong>Tip!</strong> Select a hotel close to the Acropolis. Athens is a very walkable city. Most day excursions offer hotel pickup - but they tend to offer that for those in the inner-city.  
+                        </p>
+                        
                     </td>
                 </tr>
             </tfoot>
@@ -138,10 +140,30 @@
 
     </section>
     <section id="contact">
-
+        <h3>Let's Hear From You</h3>
+        <form action="https://httpbin.org/get" method="GET">
+            <fieldset>
+                <legend>Would you visit Athens, Greece?</legend>
+                <p>
+                    <label for="wouldVisit">Totally</label>
+                    <input type="radio" name="visit" id="wouldVisit" value="wouldVisit" checked >   
+                </p>
+                <p>
+                    <label for="wouldNotVisit">No way!</label>
+                    <input type="radio" name="visit" id="wouldNotVisit" value="wouldNotVisit">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Where is your dream destination?</legend>
+                <label for="message"></label>
+                <textarea name="message" id="message" placeholder="Rome, Italy" cols="30" rows="3"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
     </section>
     <footer>
-        <p>&copy; <a href="about.html">Oceanna Hartog</a> 2025</p>
+        <p>&copy; <a href="about.html">Oceanna Hartog</a>; 2025</p>
         <p><a href="#">Back to Top</a></p>
     </footer>
     
